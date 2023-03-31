@@ -7,6 +7,7 @@ import com.rabbitmq.client.MessageProperties;
 /**
  * 生产者
  * 批量发布确认，发送消息10000个，耗时：1256ms
+ * 批量发布确认，吞吐量高，出现问题，无法定位到具体的消息（不推荐使用）
  */
 public class Producer {
 
