@@ -8,11 +8,14 @@ import java.util.concurrent.ConcurrentNavigableMap;
 import java.util.concurrent.ConcurrentSkipListMap;
 
 /**
- * 生产者
- * 异步发布确认，发送消息10000个，耗时：1089ms
+ * 异步发布确认生产者
+ * 发送消息10000个，耗时：1089ms
  * 最佳性能和资源使用，出现错误可以很好控制（推荐使用）
  * 核心思想：监控消息是否成功确认，成功确认的话走消息确认成功回调，否则走消息确认失败回调。
  * 如何获取消息确认失败的数据：声明线程安全有序的哈希表，在发送消息时，把消息存入，在消息成功确认回调种删除成功确认数据。
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Producer {
 
