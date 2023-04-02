@@ -5,7 +5,11 @@ import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 
 /**
- * 消费者
+ * TOPIC（主题）类型交换机消费者
+ * 生产者将消息发送给TOPIC模式交换机，交换机会根据RoutingKey的规则发送给指定队列。
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Consumer14 {
     public static final String EXCHANGE_NAME = "topic_exchange";
@@ -13,6 +17,7 @@ public class Consumer14 {
     public static void main(String[] args) throws Exception{
         Channel channel = RabbitUtil.createChannel();
 
+        // 定义一个主题类型的交换机
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.TOPIC);
 
         String queueName = channel.queueDeclare().getQueue();
