@@ -5,9 +5,12 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.MessageProperties;
 
 /**
- * 生产者
- * 单个发布确认，发送消息10000个，耗时：206084ms
- * 单个发布确认，吞吐量低，不适用于大数据量场景。（不推荐使用）
+ * 批量发布确认生产者
+ * 发送消息10000个，耗时：206084ms
+ * 吞吐量低，不适用于大数据量场景。（不推荐使用）
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Producer {
 
