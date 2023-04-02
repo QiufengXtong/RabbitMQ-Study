@@ -5,8 +5,11 @@ import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 
 /**
- * 消费者
- * DIRECT模式：生产者将消息发送给DIRECT模式交换机，交换机会将消息发送给指定RoutingKey的队列。
+ * DIRECT（直接）类型交换机消费者
+ * 生产者将消息发送给DIRECT类型交换机，交换机会将消息发送给指定RoutingKey的队列。
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Consumer13 {
     public static final String EXCHANGE_NAME = "direct_exchange";
@@ -14,6 +17,7 @@ public class Consumer13 {
     public static void main(String[] args) throws Exception {
         Channel channel = RabbitUtil.createChannel();
 
+        // 定义一个直接类型的交换机
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
 
         String queueName = channel.queueDeclare().getQueue();
