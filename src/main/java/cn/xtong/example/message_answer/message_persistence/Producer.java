@@ -7,9 +7,11 @@ import com.rabbitmq.client.MessageProperties;
 import java.nio.charset.StandardCharsets;
 
 /**
- * 生产者
- * 消息持久化
+ * 消息持久化生产者
  * 注意：设置消息的持久化时，队列必须设置持久化，否则重启rabbitMQ以后，队列消息都会丢失
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Producer {
     public static final String QUEUE_NAME = "message_persistence_queue";

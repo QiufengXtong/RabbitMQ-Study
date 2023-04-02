@@ -5,7 +5,10 @@ import cn.xtong.example.util.RabbitUtil;
 import com.rabbitmq.client.Channel;
 
 /**
- * 消费者Consumer05
+ * 消息持久化消费者
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Consumer05 {
     public static final String QUEUE_NAME = "message_persistence_queue";
