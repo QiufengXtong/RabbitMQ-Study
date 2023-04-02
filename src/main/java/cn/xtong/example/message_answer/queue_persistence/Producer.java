@@ -4,8 +4,11 @@ import cn.xtong.example.util.RabbitUtil;
 import com.rabbitmq.client.Channel;
 
 /**
- * 生产者
+ * 队列持久化生产者
  * 队列持久化：重启RabbitMQ服务队列还会存在。
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Producer {
     public static final String QUEUE_NAME = "persistence_queue";
