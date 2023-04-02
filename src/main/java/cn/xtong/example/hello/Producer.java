@@ -6,12 +6,18 @@ import com.rabbitmq.client.Channel;
 import java.nio.charset.StandardCharsets;
 
 /**
- * 生产者
+ * hello world 生产者
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Producer {
+
+    // 队列名称
     public static final String QUEUE_NAME = "hello";
 
     public static void main(String[] args) throws Exception {
+        // 创建信道
         Channel channel = RabbitUtil.createChannel();
 
         /**
@@ -23,6 +29,8 @@ public class Producer {
          * 5.其他参数
          */
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+
+        // 发送的消息
         String message = "hello world";
 
         /**
