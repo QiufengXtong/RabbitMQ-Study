@@ -1,5 +1,5 @@
 # RabbitMQ 学习示例代码
-
+学习视频：https://www.bilibili.com/video/BV1cb4y1o7zz?p=1&vd_source=57f1be962fbf0a4e3f2f84f4e1f6ada9
 ## hello，world
 https://github.com/QiufengXtong/RabbitMQ-Study/tree/master/src/main/java/cn/xtong/example/hello
 ## 消息应答
