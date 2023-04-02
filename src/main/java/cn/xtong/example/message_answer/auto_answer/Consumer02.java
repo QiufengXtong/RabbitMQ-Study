@@ -5,8 +5,10 @@ import cn.xtong.example.util.RabbitUtil;
 import com.rabbitmq.client.Channel;
 
 /**
- * 消费者Consumer02
- * 自动应答
+ * 自动应答消费者
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Consumer02 {
     public static final String QUEUE_NAME = "auto_answer_queue";

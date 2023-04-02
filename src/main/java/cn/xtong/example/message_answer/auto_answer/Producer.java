@@ -7,7 +7,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 /**
- * 生产者
+ * 自动应答生产者
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Producer {
     public static final String QUEUE_NAME = "auto_answer_queue";
@@ -22,7 +25,7 @@ public class Producer {
         while (scanner.hasNext()) {
             String message = scanner.next();
             channel.basicPublish("", QUEUE_NAME, null, message.getBytes(StandardCharsets.UTF_8));
-            System.out.println("成功发送消息："+message);
+            System.out.println("成功发送消息：" + message);
         }
     }
 }
