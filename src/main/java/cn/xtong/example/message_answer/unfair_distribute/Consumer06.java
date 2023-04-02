@@ -5,9 +5,11 @@ import cn.xtong.example.util.RabbitUtil;
 import com.rabbitmq.client.Channel;
 
 /**
- * 消费者Consumer06
- * 不公平分发
+ * 不公平分发消费者
  * 注意：不公平分发需要，手动应答，自动应答无效
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Consumer06 {
     public static final String QUEUE_NAME = "unfair_distribute_queue";

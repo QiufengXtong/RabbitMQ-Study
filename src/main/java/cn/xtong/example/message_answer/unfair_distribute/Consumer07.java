@@ -2,14 +2,14 @@ package cn.xtong.example.message_answer.unfair_distribute;
 
 import cn.hutool.core.thread.ThreadUtil;
 import cn.xtong.example.util.RabbitUtil;
-import com.rabbitmq.client.CancelCallback;
 import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.DeliverCallback;
 
 /**
- * 消费者Consumer07
- * 不公平分发
+ * 不公平分发消费者
  * 注意：不公平分发需要，手动应答，自动应答无效
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Consumer07 {
     public static final String QUEUE_NAME = "unfair_distribute_queue";

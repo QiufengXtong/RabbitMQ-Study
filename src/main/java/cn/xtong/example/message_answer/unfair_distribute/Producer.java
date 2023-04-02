@@ -7,7 +7,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 /**
- * 生产者
+ * 不公平分发生产者
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Producer {
     public static final String QUEUE_NAME = "unfair_distribute_queue";
