@@ -8,8 +8,11 @@ import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 /**
- * 生产者
- * FANOUT模式：生产者将消息发送给FANOUT模式交换机，交换机会将消息发送给所有的队列。
+ * FANOUT（扇出）类型交换机生产者
+ * 生产者将消息发送给FANOUT模式交换机，交换机会将消息发送给所有的队列。
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Producer {
     public static final String EXCHANGE_NAME = "fanout_exchange";

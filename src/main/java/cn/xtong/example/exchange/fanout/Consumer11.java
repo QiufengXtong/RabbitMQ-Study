@@ -4,8 +4,11 @@ import cn.xtong.example.util.RabbitUtil;
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 /**
- * 消费者
- * FANOUT模式：生产者将消息发送给FANOUT模式交换机，交换机会将消息发送给所有的队列。
+ * FANOUT（扇出）类型交换机消费者
+ * 生产者将消息发送给FANOUT模式交换机，交换机会将消息发送给所有的队列。
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Consumer11 {
     public static final String EXCHANGE_NAME = "fanout_exchange";
