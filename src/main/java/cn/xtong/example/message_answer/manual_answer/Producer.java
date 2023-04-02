@@ -7,7 +7,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 /**
- * 生产者
+ * 手动应答生产者
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Producer {
     public static final String QUEUE_NAME = "manual_answer_queue";

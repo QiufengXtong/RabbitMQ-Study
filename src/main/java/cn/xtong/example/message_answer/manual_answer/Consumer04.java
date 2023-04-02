@@ -2,13 +2,13 @@ package cn.xtong.example.message_answer.manual_answer;
 
 import cn.hutool.core.thread.ThreadUtil;
 import cn.xtong.example.util.RabbitUtil;
-import com.rabbitmq.client.CancelCallback;
 import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.DeliverCallback;
 
 /**
- * 消费者Consumer04
- * 手动应答
+ * 手动应答消费者
+ *
+ * @author 张晓童
+ * @date 2023/4/2 14:23
  */
 public class Consumer04 {
     public static final String QUEUE_NAME = "manual_answer_queue";
