@@ -12,6 +12,10 @@ import com.rabbitmq.client.ConnectionFactory;
  */
 public class RabbitUtil {
 
+    private static final String HOST = "101.43.185.176";
+    private static final String USERNAME = "root";
+    private static final String PASSWORD = "root";
+
     /**
      * 创建连接工厂
      *
@@ -19,9 +23,9 @@ public class RabbitUtil {
      */
     private static ConnectionFactory getConnectionFactory() {
         ConnectionFactory connectionFactory = new ConnectionFactory();
-        connectionFactory.setHost("101.43.185.176");
-        connectionFactory.setUsername("root");
-        connectionFactory.setPassword("root");
+        connectionFactory.setHost(HOST);
+        connectionFactory.setUsername(USERNAME);
+        connectionFactory.setPassword(PASSWORD);
         return connectionFactory;
     }
 
